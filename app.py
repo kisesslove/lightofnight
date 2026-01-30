@@ -6,6 +6,7 @@ from openai import OpenAI
 load_dotenv() # Загружает переменные из .env файла
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
+print(f"DEBUG: OPENROUTER_API_KEY (from .env) = {OPENROUTER_API_KEY}") # Временная отладочная строка
 OPENROUTER_API_BASE = "https://openrouter.ai/api/v1"
 
 app = Flask(__name__)
